@@ -1,0 +1,598 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #24406a;
+  color: #ffffff;
+  position: relative;
+}
+
+h1 {
+  font-size: 6.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+.margintop {
+  margin-top: 10px;
+}
+
+.margintop20 {
+  margin-top: 20px;
+}
+
+.margintop30 {
+  margin-top: 30px;
+}
+
+.margintop40 {
+  margin-top: 40px;
+}
+
+.margintop50 {
+  margin-top: 50px;
+}
+
+.pad {
+  padding: 10px;
+}
+
+.pad20 {
+  padding: 20px;
+}
+
+.pad30 {
+  padding: 30px;
+}
+
+.pad40 {
+  padding: 40px;
+}
+
+.pad50 {
+  padding: 50px;
+}
+
+.display-flex {
+  display: flex;
+}
+.display-flex.justify-space-between {
+  justify-content: space-between;
+}
+
+.border.bottom {
+  border-bottom: 1px solid #636363;
+}
+.border.bottom.dashed {
+  border-bottom: 1px dashed #636363;
+  padding-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.yellow {
+  color: #e0a800;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #e0a800;
+  cursor: pointer;
+}
+
+main {
+  font-family: montserrat, sans-serif;
+  /* Style for the menu links */
+  /* Initially hide the elements */
+  /* Class to apply when element is visible or should fade in */
+}
+main section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  main section {
+    height: auto;
+    margin: 16px;
+    margin-top: 60px;
+  }
+  main section:nth-of-type(1) {
+    margin-top: 100px;
+  }
+  main section:nth-last-of-type(1) {
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  main section {
+    height: auto;
+    margin: 16px;
+    margin-top: 60px;
+  }
+  main section:nth-of-type(1) {
+    margin-top: 100px;
+  }
+  main section:nth-last-of-type(1) {
+    margin-bottom: 100px;
+  }
+}
+main img {
+  max-width: 100%;
+}
+main #header {
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  background: #24406a;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px); /* Softens background */
+  padding: 16px 50px;
+  z-index: 1;
+}
+main #header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #header > div > div {
+  display: flex;
+  gap: 20px;
+}
+main #header > div > div a {
+  font-size: 1.5em;
+}
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  main #header {
+    padding: 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  main #header {
+    padding: 16px;
+  }
+}
+main #menu-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100%;
+  background: #2b2b2b;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: right 0.3s ease-in-out;
+  /* Close button styling */
+}
+main #menu-links li {
+  padding: 15px 20px;
+}
+main #menu-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+main #menu-links li:hover {
+  background: #52647b;
+}
+main #menu-links.visible {
+  right: 0;
+}
+main #menu-links #close-menu {
+  text-align: right;
+  background: #323e4d;
+}
+main #menu-links #close-menu a {
+  color: #ffffff;
+  font-weight: bold;
+}
+main #container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+main #container #hero #info {
+  background-color: #52647b;
+  border-radius: 16px;
+  background-image: url(images/Hero-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600px 600px;
+  background-position: right;
+  height: 500px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 50px;
+}
+main #container #hero #info h1 {
+  line-height: 0.8em;
+}
+main #container #hero #info a {
+  padding: 16px 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 8px;
+  background: #3a4a5e;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+main #container #hero #info a:hover {
+  background-color: #e0a800;
+  color: #ffffff;
+}
+main #container #hero #info a i {
+  padding-left: 10px;
+}
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  main #container #hero #info {
+    background-size: auto;
+    padding: 24px 16px;
+    background-image: none;
+    height: auto;
+  }
+  main #container #hero #info a {
+    width: auto;
+  }
+  main #container #hero #info a i {
+    float: right;
+  }
+  main #container #hero #info h1 {
+    font-size: 4em;
+  }
+}
+@media only screen and (min-width: 668px) and (max-width: 960px) {
+  main #container #hero #info {
+    background-size: 450px 420px;
+    height: 375px;
+    padding: 0 0 0 30px;
+  }
+  main #container #hero #info h1 {
+    font-size: 5em;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  main #container #hero #info {
+    height: 600px;
+    background-size: 800px 800px;
+  }
+  main #container #hero #info h3 {
+    font-size: 3em;
+  }
+  main #container #hero #info h1 {
+    font-size: 7em;
+  }
+}
+main #container #about > div {
+  gap: 2em;
+}
+main #container #about > div > div:nth-of-type(3) {
+  max-width: 35%;
+}
+main #container #about > div > div:nth-of-type(3) > p {
+  line-height: 1.5em;
+}
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  main #container #about > div > div:nth-of-type(1),
+  main #container #about > div > div:nth-of-type(2) {
+    display: none;
+  }
+  main #container #about > div > div:nth-of-type(3) {
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 668px) and (max-width: 768px) {
+  main #container #about > div {
+    gap: 1em;
+  }
+  main #container #about > div > div:nth-of-type(3) {
+    max-width: 50%;
+  }
+}
+main #container #works > div > div {
+  gap: 1em;
+}
+main #container #works > div .work-block {
+  background-color: #52647b;
+  border-radius: 16px;
+  text-align: center;
+  padding: 30px 20px;
+  position: relative; /* Ensures it can move */
+  transition: transform 0.3s ease-in-out; /* Smooth hover animation */
+}
+main #container #works > div .work-block:hover {
+  transform: translateY(-10px); /* Move up by 10px */
+  border: 1px solid #ffffff;
+}
+main #container #works > div .work-block h3 {
+  font-size: 22px;
+}
+main #container #works > div .work-block a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  main #container #works {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main #container #works h3 {
+    margin-left: 16px;
+  }
+  main #container #works .scrollable {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  main #container #works .work-block {
+    flex: 0 0 auto;
+    width: 250px; /* Adjust width for mobile view */
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  main #container #works .work-block:nth-of-type(1) {
+    margin-left: 16px;
+  }
+  main #container #works .work-block:nth-last-of-type(1) {
+    margin-right: 16px;
+  }
+  main #container #works .work-block:hover {
+    transform: none;
+    border: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main #container #works > div .work-block h3 {
+    font-size: 20px;
+  }
+}
+main #container #my-works {
+  display: block;
+  height: 100%;
+  margin-bottom: 100px;
+}
+main #container #my-works .tabs {
+  margin: 20px 0 40px 0;
+}
+main #container #my-works .tabs .tab-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+main #container #my-works .tabs .tab-btn.active {
+  background-color: #e0a800;
+  border-radius: 8px;
+  font-weight: bold;
+}
+main #container #my-works .tabs .tab-btn:hover {
+  background-color: #e0a800;
+  border-radius: 8px;
+}
+main #container #my-works .masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px 20px;
+}
+main #container #my-works .masonry-item {
+  background-color: #52647b;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+main #container #my-works .masonry-item:hover {
+  transform: scale(1.05);
+}
+main #container #my-works .masonry-item img,
+main #container #my-works .masonry-item iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+main #container #my-works .masonry-item p {
+  padding: 8px 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  main #container #my-works {
+    margin-bottom: 0;
+  }
+  main #container #my-works .tabs .tab-btn {
+    padding: 10px 16px;
+  }
+}
+main #container .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+}
+main #container .modal .modal-content {
+  background-color: #52647b;
+  margin: 5% auto;
+  padding: 20px;
+  width: 60%;
+  max-width: 700px;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+main #container .modal .modal-content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+main #container .modal .modal-content h3 {
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+main #container .modal .modal-content p {
+  margin-top: 10px;
+}
+main #container .modal .modal-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  main #container .modal .modal-content {
+    width: 85%;
+  }
+}
+main #container #skills {
+  display: flex;
+  gap: 5em;
+  align-items: center;
+  justify-content: space-between;
+}
+main #container #skills > div {
+  flex-basis: 100%;
+}
+main #container #skills .skillset {
+  margin-bottom: 20px;
+}
+main #container #skills .skillset span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main #container #skills .skillset ul {
+  list-style-position: inside;
+  line-height: 1.5em;
+}
+main #container #skills .skillset hr {
+  margin: 10px 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  main #container #skills > div:nth-of-type(2) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 668px) and (max-width: 768px) {
+  main #container #skills {
+    align-items: start;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  main #container #skills > div {
+    flex-basis: 40%;
+  }
+  main #container #skills > div:nth-of-type(1) {
+    flex-basis: 60%;
+  }
+}
+main #container #contact > div {
+  background-image: url(images/Get-in-touch.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  width: 100%;
+  border-radius: 16px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+main #container #contact .details {
+  max-width: 420px;
+  position: relative;
+  right: 8%;
+}
+main #container #contact .details .info {
+  border-bottom: 1px dashed #e0a800;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 440px) {
+  main #container #contact .details {
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+  main #container #contact .details a {
+    overflow-wrap: break-word;
+  }
+  main #container #contact > div {
+    background-image: none !important;
+    background-color: #273247;
+  }
+}
+@media only screen and (min-width: 668px) and (max-width: 768px) {
+  main #container #contact .details {
+    max-width: 350px;
+    right: 3%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  main #container #contact > div {
+    min-height: 560px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  main #container {
+    max-width: 1500px;
+  }
+}
+main .fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+main .fade-in-visible {
+  opacity: 1;
+}
+main footer {
+  padding: 16px;
+  background: #2b2b2b;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  main footer {
+    width: -webkit-fill-available;
+  }
+}/*# sourceMappingURL=style.css.map */
