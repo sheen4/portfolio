@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <title>Sheena Portfolio</title>
+    </head>
+    <body>
+        <main>
+            <nav id="header">
+                <div>
+                    <h3>PORTFOLIO</h3>
+                    <div>
+                        <a href="https://www.linkedin.com/in/sheena-mae/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="javascript:void(0)" id="menu-toggle">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Hidden menu links -->
+                <ul id="menu-links">
+                    <li id="close-menu">
+                        <a href="javascript:void(0)" class="close-button">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#hero">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#my-works">Works</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="container">
+                <section id="hero" class="">
+                    <div id="info" class="display-flex">
+                        <h3>HELLO, I AM</h3>
+                        <h1 class="yellow">SHEENA</h1>
+                        <div class="margintop50">
+                            <h4 class="yellow">A WEB DESIGNER,</h4>
+                            <span class="margintop"> On a journey to design better digital experiences. </span>
+                        </div>
+                        <a href="index.html#about" class="explore margintop50">Explore More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </section>
+                <section id="about" class="fade-in">
+                    <div class="display-flex">
+                        <div>
+                            <img src="images/Working.png" alt="">
+                        </div>
+                        <div class="margintop50">
+                            <img src="images/Coffee-break.png" alt="">
+                        </div>
+                        <div class="margintop50">
+                            <h3>ABOUT ME</h3>
+                            <p class="margintop20"> Hi, I’m Sheena, a Web Designer based in the Philippines. I’m on a journey to grow as a designer, combining my background in multimedia design with a passion for crafting user-centered digital experiences. I believe good design solves problems while creating delightful, intuitive interactions. </p>
+                            <p class="margintop30"> When I’m not designing, you’ll find me enjoying a cup of coffee in the morning or diving into video games—both of which inspire me to stay creative and curious. </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="my-works">
+                    <h3>MY WORKS</h3>
+                    <!-- Tabs for Categories -->
+                    <div class="tabs">
+                        <button class="tab-btn active" data-category="UI">UI Design</button>
+                        <button class="tab-btn" data-category="Graphic">Graphic Design</button>
+                        <!-- <button class="tab-btn" data-category="Video">Video</button> -->
+                    </div>
+                    <!-- Masonry Grid -->
+                    <div class="masonry">
+                        <!-- UI Design -->
+                        <div class="masonry-item" data-category="UI" data-title="Saiko Ramen" data-desc="A sleek and modern mobile app UI designed for a ramen restaurant. The dark theme enhances the premium feel, while bold red accents draw attention to key elements. The intuitive layout ensures a smooth ordering experience with clear product details and easy navigation.">
+                            <img src="images/ui/Saikoramen-app-ui-design.png" alt="Saiko Ramen">
+                            <p>Saiko Ramen</p>
+                        </div>
+                        <div class="masonry-item" data-category="UI" data-title="Serene Coffee" data-desc="A warm and inviting mobile app UI crafted for coffee lovers. The soft beige tones create a cozy aesthetic, while the clean layout ensures an effortless browsing and ordering experience. Thoughtful typography and calming visuals enhance the serene brand identity.">
+                            <img src="images/ui/Coffee-ui-app-design.png" alt="Serene Coffee">
+                            <p>Serene Coffee</p>
+                        </div>
+                        <div class="masonry-item" data-category="UI" data-title="Japan Travel" data-desc="A visually engaging mobile app designed for exploring Japan. The clean white background and bold red accents create a striking look, while the easy-to-navigate layout showcases popular destinations and seasonal highlights, offering users a seamless and informative travel experience.">
+                            <img src="images/ui/Japan-ui-app-design.png" alt="Japan Travel">
+                            <p>Japan Travel</p>
+                        </div>
+                        <div class="masonry-item" data-category="UI" data-title="Soul Music" data-desc="A sleek music streaming app. SOUL features a dark, modern interface with vibrant yellow highlights, creating a visually striking contrast that enhances usability. The design emphasizes personalization, with sections for popular artists, recommendations, and a seamless music player interface.">
+                            <img src="images/ui/Music-app-ui-design.png" alt="Soul Music">
+                            <p>Soul Music</p>
+                        </div>
+                        <div class="masonry-item" data-category="UI" data-title="Venture" data-desc="Venture is a travel website designed to inspire wanderlust. With its inviting dark green tones and gold accents, it offers a seamless browsing experience, making it easy to explore destinations and book flights. The clean layout and engaging visuals create a refreshing and simple way to plan your next adventure.">
+                            <img src="images/ui/Venture-homepage.png" alt="Venture">
+                            <p>Venture</p>
+                        </div>
+                        <div class="masonry-item" data-category="UI" data-title="West Hullabaloo" data-desc="West Hullabaloo is a playful and immersive website for gamers. The vibrant green and blue gradient sets an exciting tone, while the yellow accents add a fun pop of energy. Games are showcased in grid, complete with interactive video demos, invites users to dive right in. With a smooth layout and a fixed chat forum for instant connection, it offers a lively and engaging experience for everyone.">
+                            <img src="images/ui/West-hullabaloo.png" alt="West Hullabaloo">
+                            <p>West Hullabaloo</p>
+                        </div>
+                        <!-- Graphic Design -->
+                        <div class="masonry-item" data-category="Graphic" data-title="Prime Outsourcing - Brochure" data-desc="">
+                            <img src="images/graphics/Brochure-Prime.jpg" alt="Prime">
+                            <p>Prime</p>
+                        </div>
+                        <div class="masonry-item" data-category="Graphic" data-title="EOM - Brochure" data-desc="">
+                            <img src="images/graphics/Brochure-EOM.jpg" alt="Prime">
+                            <p>EOM</p>
+                        </div>
+                        <div class="masonry-item" data-category="Graphic" data-title="How to Start - Infographics" data-desc="">
+                            <img src="images/graphics/Infographics-Prime-Start.jpg" alt="Prime">
+                            <p>How to Start</p>
+                        </div>
+                        <div class="masonry-item" data-category="Graphic" data-title="Vidalia - Infographics" data-desc="">
+                            <img src="images/graphics/Infographics-Vidalia.jpg" alt="Vidalia">
+                            <p>Vidalia</p>
+                        </div>
+                        <div class="masonry-item" data-category="Graphic" data-title="EOM - Business Card" data-desc="">
+                            <img src="images/graphics/Business-Card-EOM.jpg" alt="EOM">
+                            <p>EOM</p>
+                        </div>
+                        <div class="masonry-item" data-category="Graphic" data-title="Vidalia - Business Card" data-desc="">
+                            <img src="images/graphics/Business-Card-VIDALIA.jpg" alt="Vidalia">
+                            <p>Vidalia</p>
+                        </div>
+                        <div class="masonry-item" data-category="Graphic" data-title="PHTRADING - Business Card" data-desc="">
+                            <img src="images/graphics/Business-Card-PHTRADING.jpg" alt="PHTRADING">
+                            <p>PHTRADING</p>
+                        </div>
+                        <div class="masonry-item" data-category="Graphic" data-title="PHCREDIT - Business Card" data-desc="">
+                            <img src="images/graphics/Business-Card-PHCREDIT.jpg" alt="PHCREDIT">
+                            <p>PHCREDIT</p>
+                        </div>
+                        <!-- Video -->
+                        <!-- <div class="masonry-item" data-category="Video" data-title="Paraluman" data-desc=""><iframe width="100%" height="200" src="https://www.youtube.com/embed/N3Jo0g1gsp8?si=CLiSRKEK2k0b030j" title="YouTube video player" frameborder="0" allowfullscreen></iframe><p>Paraluman</p></div><div class="masonry-item" data-category="Video" data-title="Amatz" data-desc=""><iframe width="100%" height="200" src="https://www.youtube.com/embed/cFX4iady2iI?si=DnQ2NQ4bMx2itp3o" title="YouTube video player" frameborder="0" allowfullscreen></iframe><p>Amatz</p></div><div class="masonry-item" data-category="Video" data-title="Lily" data-desc=""><iframe width="100%" height="200" src="https://www.youtube.com/embed/J3NyZmWUNqk?si=TqJtmvfidDJEreZF" title="YouTube video player" frameborder="0" allowfullscreen></iframe><p>Lily</p></div> -->
+                    </div>
+                </section>
+                <!-- Modal Structure -->
+                <div id="project-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+                        <img id="modal-img" src="" alt="Project Image">
+                        <h3 id="modal-title"></h3>
+                        <p id="modal-desc"></p>
+                    </div>
+                </div>
+                <section id="skills" class="fade-in">
+                    <div>
+                        <h3>SKILLS AND TOOLS</h3>
+                        <div class="skillset margintop30">
+                            <span class="yellow">Design & front-end development</span>
+                            <hr>
+                            <ul>
+                                <li>Responsive Design</li>
+                                <li>HTML</li>
+                                <li>CSS (SASS)</li>
+                                <li>Mockups</li>
+                                <li>Wireframing</li>
+                                <li>Prototyping</li>
+                            </ul>
+                        </div>
+                        <div class="skillset">
+                            <span class="yellow">Prototyping & collaboration tools</span>
+                            <hr>
+                            <ul>
+                                <li>Sketch</li>
+                                <li>Figma</li>
+                                <li>Adobe XD</li>
+                                <li>Git</li>
+                                <li>Jira</li>
+                                <li>Asana</li>
+                            </ul>
+                        </div>
+                        <div class="skillset">
+                            <span class="yellow">Creative and multimedia tools</span>
+                            <hr>
+                            <ul>
+                                <li>Adobe Premiere Pro</li>
+                                <li>Davinci Resolve</li>
+                                <li>Articulate Storyline 360</li>
+                                <li>Vyond Animation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/Skills-tools.png" alt="">
+                    </div>
+                </section>
+                <section id="contact" class="fade-in">
+                    <div>
+                        <div class="details">
+                            <h3>GET IN TOUCH</h3>
+                            <p>Feel free to get in touch for design inquiries, collaborations, or just a chat about design!</p>
+                            <p class="info margintop50">
+                                <b>email:</b>
+                                <br>maanosheena@gmail.com
+                            </p>
+                            <p class="info margintop20">
+                                <b>linkedin:</b>
+                                <br>
+                                <a href="https://www.linkedin.com/in/sheena-mae/" target="_blank">https://www.linkedin.com/in/sheena-mae/</a>
+                            </p>
+                            <p class="info margintop20">
+                                <b>behance:</b>
+                                <br>
+                                <a href="https://www.behance.net/maanosheen7950" target="_blank">https://www.behance.net/maanosheen7950</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <center>© 2025 Maano Sheena – Web Designer</center>
+            </footer>
+        </main>
+    </body>
+    <script src="js/modal.js"></script>
+    <script src="js/animation.js"></script>
+</html>
